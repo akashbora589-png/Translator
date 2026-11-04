@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - PC Gaming World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2 id="logo">🎮 GAMEVERSE</h2>
+
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="as">Assamese</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+        </select>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1 id="title">Welcome to PC Gaming World!</h1>
+
+            <p id="intro">
+                Discover amazing PC games and explore the world of gaming.
+            </p>
+
+            <button id="button">Explore Games</button>
+        </div>
+
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+
+        <h2 id="aboutTitle">About PC Gaming</h2>
+
+        <p id="about">
+            PC gaming is a popular way to play video games using
+            a personal computer. It offers great graphics,
+            customization and exciting experiences.
+        </p>
+
+        <!-- Game Genres -->
+        <h2 id="genreTitle">Popular Game Genres</h2>
+
+        <div class="games">
+
+            <div class="card">
+                <h3 id="action">Action Games</h3>
+                <p id="actionDesc">
+                    Fast-paced games with exciting combat and challenges.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 id="adventure">Adventure Games</h3>
+                <p id="adventureDesc">
+                    Explore amazing worlds and experience interesting stories.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 id="racing">Racing Games</h3>
+                <p id="racingDesc">
+                    Enjoy high-speed racing and compete against others.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 id="horror">Horror Games</h3>
+                <p id="horrorDesc">
+                    Experience suspense, mystery and thrilling adventures.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Popular PC Games -->
+        <h2 id="popularTitle">Popular PC Games</h2>
+
+        <div class="games">
+
+            <div class="card game-card">
+
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg"
+                    alt="Grand Theft Auto V">
+
+                <h3>GTA V</h3>
+
+                <p id="gta">
+                    An open-world action adventure game.
+                </p>
+
+            </div>
+
+            <div class="card game-card">
+
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg"
+                    alt="Red Dead Redemption 2">
+
+                <h3>Red Dead Redemption 2</h3>
+
+                <p id="rdr">
+                    An exciting western adventure game.
+                </p>
+
+            </div>
+
+            <div class="card game-card">
+
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg"
+                    alt="Resident Evil 4">
+
+                <h3>Resident Evil 4</h3>
+
+                <p id="re">
+                    A survival horror action game.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer">
+            © 2026 GameVerse | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

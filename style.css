@@ -1,0 +1,334 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fc;
+    color: #26334a;
+    transition: 0.4s;
+}
+
+/* Header */
+
+header {
+    background: #ffffff;
+    color: #26334a;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #00000015;
+}
+
+header h2 {
+    color: #3563c7;
+    letter-spacing: 2px;
+}
+
+select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    color: #26334a;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Welcome Section */
+
+.hero {
+    min-height: 420px;
+
+    background:
+    linear-gradient(rgba(15, 30, 60, 0.55),
+                    rgba(15, 30, 60, 0.55)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 13px 28px;
+    background: #ffffff;
+    color: #3563c7;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3563c7;
+    color: white;
+}
+
+/* Main Content */
+
+.content {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.content h2 {
+    color: #3563c7;
+    margin: 35px 0 25px;
+}
+
+.content > p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Game Cards */
+
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    color: #26334a;
+    width: 250px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px #00000020;
+}
+
+.card h3 {
+    color: #3563c7;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Popular Game Images */
+
+.game-card {
+    width: 300px;
+    overflow: hidden;
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background: #ffffff;
+    color: #26334a;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px #00000010;
+}
+
+/* Hindi Theme */
+
+body.hindi {
+    background: #fff5e8;
+    color: #4a2514;
+}
+
+body.hindi header,
+body.hindi footer {
+    background: #fff0df;
+}
+
+body.hindi header h2,
+body.hindi .content h2,
+body.hindi .card h3 {
+    color: #a44a24;
+}
+
+body.hindi .hero {
+    background-image:
+    linear-gradient(rgba(100, 40, 10, 0.45),
+                    rgba(100, 40, 10, 0.45)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+}
+
+body.hindi .card {
+    background: #ffe6cc;
+}
+
+/* Assamese Theme */
+
+body.assamese {
+    background: #fff8e9;
+    color: #49320f;
+}
+
+body.assamese header,
+body.assamese footer {
+    background: #fff0d3;
+}
+
+body.assamese header h2,
+body.assamese .content h2,
+body.assamese .card h3 {
+    color: #a34c27;
+}
+
+body.assamese .hero {
+    background-image:
+    linear-gradient(rgba(100, 45, 15, 0.45),
+                    rgba(100, 45, 15, 0.45)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+}
+
+body.assamese .card {
+    background: #f9e5bd;
+}
+
+/* French Theme */
+
+body.french {
+    background: #edf4ff;
+    color: #142b50;
+}
+
+body.french header,
+body.french footer {
+    background: #ffffff;
+}
+
+body.french header h2,
+body.french .content h2,
+body.french .card h3 {
+    color: #315caa;
+}
+
+body.french .hero {
+    background-image:
+    linear-gradient(rgba(20, 50, 100, 0.45),
+                    rgba(20, 50, 100, 0.45)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+}
+
+body.french .card {
+    background: #dbe8ff;
+}
+
+/* Spanish Theme */
+
+body.spanish {
+    background: #fff4e5;
+    color: #53250e;
+}
+
+body.spanish header,
+body.spanish footer {
+    background: #fff0dc;
+}
+
+body.spanish header h2,
+body.spanish .content h2,
+body.spanish .card h3 {
+    color: #c44a22;
+}
+
+body.spanish .hero {
+    background-image:
+    linear-gradient(rgba(120, 35, 15, 0.45),
+                    rgba(120, 35, 15, 0.45)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+}
+
+body.spanish .card {
+    background: #ffe0b5;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 30px 5%;
+    }
+
+    .card,
+    .game-card {
+        width: 100%;
+    }
+
+    .game-card img {
+        height: 190px;
+    }
+}
